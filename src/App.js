@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Sidebar from './Sidebar';
+import Chat from './Chat';
+import "./App.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {/* <h1>Hello Huy Nguyen... Let's build a MERN Whatsapp 🚀</h1> */}
+      <div className="app_body">
+        {/* Sidebar */}
+        <Sidebar />
+        {/* Chat component */}
+        <Chat />
+      </div>
     </div>
   );
 }
